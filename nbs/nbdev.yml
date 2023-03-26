@@ -4,6 +4,6 @@ project:
 website:
   title: "dseq"
   site-url: "https://rraadd88.github.io/dseq"
-  description: "DeepSeq data analysis in python."
+  description: "Deep sequencing data analysis in pandas."
   repo-branch: main
   repo-url: "https://github.com/rraadd88/dseq"
