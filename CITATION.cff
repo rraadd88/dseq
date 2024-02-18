@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+title: 'dseq: Deep sequencing analysis in dataframes'
+message: If you use this software, please cite it using the metadata from this file.
+type: software
+authors:
+- given-names: Rohan
+  family-names: Dandage
+  orcid: https://orcid.org/0000-0002-6421-2067
+identifiers:
+- type: doi
+  value: doi/10.5281/zenodo.10675755
+repository-code: https://github.com/rraadd88/dseq
+version: v0.0.2
+date-released: '2024-02-18'
