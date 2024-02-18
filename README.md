@@ -1,5 +1,6 @@
 # ``dseq`` <a href="#"><img src="https://openmoji.org/data/color/svg/1F9F1.svg" align="right" width="20%"></a>
 
+Deep sequencing analysis in dataframes
 <!-- [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url] -->
@@ -26,10 +27,10 @@ pip install dseq
 from dseq.tools import to_df
 df=to_df(
     bam_path='inputs/test.bam', # path to the bam file
-    contig='14',              # i.e. reference name/ target
-    start=74846395,           # start position
-    end=74846545,             # end position
-    verbose=True,             # verbose
+    contig='14',                # i.e. reference name/ target
+    start=74846395,             # start position
+    end=74846545,               # end position
+    verbose=True,               # verbose
 )
 df.head(1)
 ```
@@ -439,19 +440,18 @@ data.head(1)
   title   = {dseq: Deep sequencing analysis in dataframes},
   author  = {Dandage, Rohan},
   year    = {2024},
-  url     = {https://zenodo.org/doi/},
+  url     = {https://zenodo.org/doi/10.5281/zenodo.10675755},
   version = {v0.0.2},
   note    = {The URL is a DOI link to the permanent archive of the software.},
 }
 ```
-2. DOI link: [![DOI](https://zenodo.org/badge.svg)](https://zenodo.org/doi/), or  
+2. DOI link: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10675756.svg)](https://doi.org/10.5281/zenodo.10675756), or  
 
 3. Using citation information from [CITATION.CFF file](https://github.com/rraadd88/dseq/blob/master/CITATION.cff).  
 
 ## Similar Projects
 
-- [`sambamba depth`](https://github.com/biod/sambamba/wiki/%5Bsambamba-depth%5D-documentation)
-  D
+- [`sambamba depth`](https://github.com/biod/sambamba/wiki/%5Bsambamba-depth%5D-documentation) D
 - [`samtools depth`](http://www.htslib.org/doc/samtools-depth.html) C
 - [`mosdepth`](https://github.com/brentp/mosdepth) Nim
 - [`perbase`](https://github.com/sstadick/perbase) Rust
