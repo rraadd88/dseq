@@ -433,7 +433,7 @@ data.head(1)
 
 </div>
 
-# How to cite?  
+## How to cite?  
 1. Using BibTeX:   
 ```
 @software{Dandage_dseq,
