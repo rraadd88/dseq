@@ -1,10 +1,11 @@
-``dseq`` <a href="#"><img src="https://openmoji.org/data/color/svg/1F9F1.svg" align="right" width="20%"></a>
+# ``dseq`` <a href="#"><img src="https://openmoji.org/data/color/svg/1F9F1.svg" align="right" width="20%"></a>
 
 <!-- [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url] -->
-<!-- <a href="">[![PyPI](https://img.shields.io/pypi/v/dseq?style=for-the-badge)![Python](https://img.shields.io/pypi/pyversions/dseq?style=for-the-badge)](https://pypi.org/project/dseq)</a> -->
-<a href="">[![build](https://img.shields.io/github/actions/workflow/status/rraadd88/dseq/build.yml?style=for-the-badge)](https://github.com/rraadd88/dseq/actions/workflows/build.yml)</a>
+<a href="">[![PyPI](https://img.shields.io/pypi/v/dseq?style=for-the-badge)
+![Python](https://img.shields.io/pypi/pyversions/dseq?style=for-the-badge)](https://pypi.org/project/dseq)</a>
+<a href="">[![build](https://img.shields.io/github/actions/workflow/status/rraadd88/dseq/test.yaml?style=for-the-badge)](https://github.com/rraadd88/dseq/actions/workflows/test.yaml)</a>
 <a href="">[![Issues](https://img.shields.io/github/issues/rraadd88/dseq.svg?style=for-the-badge)](https://github.com/rraadd88/dseq/issues)</a>
 <a href="">[![Downloads](https://img.shields.io/pypi/dm/dseq?style=for-the-badge)](https://pepy.tech/project/dseq)</a>
 <a href="">[![GNU License](https://img.shields.io/github/license/rraadd88/dseq.svg?style=for-the-badge)](https://github.com/rraadd88/dseq/blob/master/LICENSE)</a>
@@ -431,16 +432,21 @@ data.head(1)
 
 </div>
 
-## How to cite
+# How to cite?  
+1. Using BibTeX:   
+```
+@software{Dandage_dseq,
+  title   = {dseq: Deep sequencing analysis in dataframes},
+  author  = {Dandage, Rohan},
+  year    = {2024},
+  url     = {https://zenodo.org/doi/},
+  version = {v0.0.2},
+  note    = {The URL is a DOI link to the permanent archive of the software.},
+}
+```
+2. DOI link: [![DOI](https://zenodo.org/badge.svg)](https://zenodo.org/doi/), or  
 
-    @misc{Dandage2023,
-      author = {Dandage, Rohan},
-      title = {Deep sequencing data analysis in pandas.},
-      year = {2023},
-      publisher = {GitHub},
-      journal = {GitHub repository},
-      howpublished = {\url{https://github.com/rraadd88/dseq}},
-    }
+3. Using citation information from [CITATION.CFF file](https://github.com/rraadd88/dseq/blob/master/CITATION.cff).  
 
 ## Similar Projects
 
