@@ -15,7 +15,7 @@ pip install dseq
 ``` python
 from dseq.tools import to_df
 df=to_df(
-    bam_path='data/test.bam', # path to the bam file
+    bam_path='inputs/test.bam', # path to the bam file
     contig='14',              # i.e. reference name/ target
     start=74846395,           # start position
     end=74846545,             # end position
@@ -435,9 +435,9 @@ data.head(1)
 
 ## Similar Projects
 
-- [`perbase`](https://github.com/sstadick/perbase) Rust
 - [`sambamba depth`](https://github.com/biod/sambamba/wiki/%5Bsambamba-depth%5D-documentation)
   D
 - [`samtools depth`](http://www.htslib.org/doc/samtools-depth.html) C
 - [`mosdepth`](https://github.com/brentp/mosdepth) Nim
+- [`perbase`](https://github.com/sstadick/perbase) Rust
 - [`bam-readcount`](https://github.com/genome/bam-readcount) C++

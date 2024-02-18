@@ -23,4 +23,5 @@ d = { 'settings': { 'branch': 'main',
                             'dseq.tools.get_reads_per_contig': ('core.html#get_reads_per_contig', 'dseq/tools.py'),
                             'dseq.tools.mask_wt': ('core.html#mask_wt', 'dseq/tools.py'),
                             'dseq.tools.read_bam': ('core.html#read_bam', 'dseq/tools.py'),
+                            'dseq.tools.set_wd': ('core.html#set_wd', 'dseq/tools.py'),
                             'dseq.tools.to_df': ('core.html#to_df', 'dseq/tools.py')}}}
