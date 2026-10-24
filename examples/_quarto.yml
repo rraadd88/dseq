@@ -1,0 +1,33 @@
+project:
+  type: website
+  # g: the docs are built from examples/ into _docs/ at the repository root
+  output-dir: ../_docs
+  # g: the notebooks are rendered with their saved outputs (not executed)
+  render:
+    - index.ipynb
+  preview:
+    port: 3000
+    browser: false
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+website:
+  title: "dseq"
+  site-url: "https://rraadd88.github.io/dseq"
+  description: "Deep sequencing data analysis in pandas."
+  twitter-card: true
+  open-graph: true
+  repo-branch: master
+  repo-url: "https://github.com/rraadd88/dseq"
+  repo-actions: [issue]
+  navbar:
+    background: primary
+    search: true
+  sidebar:
+    style: floating
+    contents:
+      - index.ipynb

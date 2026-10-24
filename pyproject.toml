@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=77.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dseq"
+dynamic = ["version"]
+description = "Deep sequencing data analysis in pandas."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "GPL-3.0-or-later"
+license-files = ["LICENSE"]
+authors = [{ name = "Rohan Dandage", email = "rohanadandage@gmail.com" }]
+keywords = ["deep sequencing", "bam", "mutations", "pandas"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+]
+# g: pysam is no longer pinned to 0.20.0, which has no wheels for current Pythons; matplotlib and Jinja2 are used by the styled maps (get_map)
+dependencies = [
+    "pandas",
+    "pysam",
+    "matplotlib",
+    "Jinja2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "nbclient", "nbformat", "ipykernel", "pyyaml"]
+
+[project.urls]
+Homepage = "https://github.com/rraadd88/dseq"
+Documentation = "https://rraadd88.github.io/dseq"
+Issues = "https://github.com/rraadd88/dseq/issues"
+
+[tool.setuptools]
+packages = ["dseq"]
+
+[tool.setuptools.dynamic]
+version = { attr = "dseq.__version__" }
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
