@@ -27,8 +27,8 @@ def _to_df(
      .assign(
          read=lambda df: df['read position'].map(
          ## Get all the reference (position) to query mappings
-         dict(zip(range(read.query_alignment_length),
-                 list(read.query_alignment_sequence)))
+         # g: read positions from get_aligned_pairs index the full query_sequence (incl. soft-clipped bases), not query_alignment_sequence
+         dict(enumerate(read.query_sequence))
             )))
 
 def read_bam(
@@ -128,6 +128,8 @@ def to_df(
             read= lambda x: x['read'].str.upper(),
             )
         .query(expr=f"`reference position`>={start} and `reference position`<={end}")
+        # g: positions as integers (nullable, since deletions have no read position)
+        .astype({'read position':'Int64','reference position':'Int64'})
         )
     assert not df1.duplicated().any()
     if verbose: logging.info(f"size of the table = "+f"{round(sys.getsizeof(df1)/(pow(1024,3)), 2)} GB")
@@ -349,7 +351,7 @@ class Dseq:
 
         return (
             self._obj
-            .groupby((['reference position'] if include_position else [])+[f'{prefix}reference',f'{prefix}read'])[value].agg('sum') ## aggregate depth
+            .groupby((['reference position'] if include_position else [])+[f'{prefix}reference',f'{prefix}read'])[value].agg(aggfunc) ## aggregate depth
             .unstack([0,1] if include_position else [0])
             .sort_index(axis=1,level=0).fillna(0) ## formatting
             .style.format(fmt).background_gradient(cmap ='Blues_r',axis=None) ## color the table
